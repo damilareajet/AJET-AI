@@ -1,0 +1,472 @@
+{"intents": [
+    {
+        "tag": "greeting",
+        "patterns": ["Hi", "Hello", "Hey", "Good morning", "Good afternoon", "Good evening"],
+        "responses": ["Hello! How can I assist you today?", "Hi there! How can I help?", "Hey! What's up?", "Good day! What can I do for you?"],
+        "context_set": ""
+    },
+    {
+        "tag": "goodbye",
+        "patterns": ["Bye", "Goodbye", "See you later", "Talk to you later"],
+        "responses": ["Goodbye! Have a great day!", "See you later! Take care!", "Bye! Hope to talk to you soon!", "Goodbye! Stay safe!"],
+        "context_set": ""
+    },
+    {
+        "tag": "thanks",
+        "patterns": ["Thanks", "Thank you", "Thanks a lot", "I appreciate it", "Thank you very much"],
+        "responses": ["You're welcome!", "No problem at all!", "Anytime! Glad I could help!", "You're very welcome!"],
+        "context_set": ""
+    },
+    {
+        "tag": "name",
+        "patterns": ["What's your name?","What is your name?",  "Who are you?", "Tell me your name"],
+        "responses": ["I'm your AJET AI!", "You can call me AJET!", "I'm here to help, just call me AJET AI!"],
+        "context_set": ""
+    },
+    {
+        "tag": "Creator",
+        "patterns": ["Who created you?","What is your creator name?",  "Who made you?", "Tell me your creator", "Tell me who your creator"],
+        "responses": ["My Creator is Damilare Ajet", "My Creator is Damilare Ajet! Software Developer"],
+        "context_set": ""
+    },
+    {
+        "tag": "age",
+        "patterns": ["How old are you?", "What's your age?", "Tell me your age"],
+        "responses": ["Age is just a number, and I'm timeless!", "I was created to assist, and that's all that matters!", "Age is irrelevant, I'm always here to help!"],
+        "context_set": ""
+    },
+    {
+        "tag": "how_are_you",
+        "patterns": ["How are you?", "How's it going?", "What's up?"],
+        "responses": ["I'm doing great! How about you?", "I'm here and ready to help! How can I assist?", "Feeling chatty! What can I do for you?"],
+        "context_set": ""
+    },
+    {
+        "tag": "weather",
+        "patterns": ["What's the weather like?", "How's the weather?", "Is it sunny today?", "What's the forecast?"],
+        "responses": ["Let me check the weather for you!", "The current weather is [insert_weather].", "Looks like it's [insert_weather] outside."],
+        "context_set": ""
+    },
+    {
+        "tag": "time",
+        "patterns": ["What's the time?", "What time is it?", "Can you tell me the time?"],
+        "responses": ["The current time is [insert_time].", "It's [insert_time] right now.", "Let me check... it's [insert_time]."],
+        "context_set": ""
+    },
+    {
+        "tag": "date",
+        "patterns": ["What's the date today?", "Can you tell me today's date?", "What day is it today?"],
+        "responses": ["Today's date is [insert_date].", "It's [insert_date] today.", "Let me check... today's date is [insert_date]."],
+        "context_set": ""
+    },
+    {
+        "tag": "local_dish",
+        "patterns": ["Tell me about a local dish", "What's a popular local dish?", "Can you suggest a local dish?", "Any local dish recommendations?"],
+        "responses": ["A popular local dish is Jollof Rice, which is a favorite in many Nigerian households.", "You might enjoy Pounded Yam with Egusi Soup, a traditional and hearty meal.", "How about trying some Suya, a spicy meat skewer popular in Nigeria?", "I recommend Akara, a delicious Nigerian street food made from deep-fried bean cakes."],
+        "context_set": ""
+    },
+    {
+        "tag": "nigerian_dessert",
+        "patterns": ["Recommend a Nigerian dessert", "Any popular Nigerian desserts?", "Tell me about Nigerian desserts"],
+        "responses": ["A popular Nigerian dessert is Puff-Puff, which is similar to doughnuts but without the hole.", "Try Chin Chin, a crunchy snack that is often enjoyed as a dessert.", "You might like Bofrot, a sweet, fried dough ball popular in West Africa.", "For a unique dessert, try Moin Moin, which can be made sweet or savory."],
+        "context_set": ""
+    },
+    {
+        "tag": "hobbies",
+        "patterns": ["What are your hobbies?", "Do you have any hobbies?", "Tell me about your hobbies"],
+        "responses": ["I love chatting and helping out with any questions you have!", "My hobby is learning new things so I can assist you better!", "I enjoy interacting with people and providing information."],
+        "context_set": ""
+    },
+    {
+        "tag": "fun_fact",
+        "patterns": ["Tell me a fun fact", "Do you know any fun facts?", "Give me an interesting fact"],
+        "responses": ["Did you know that honey never spoils? Archaeologists have found pots of honey in ancient Egyptian tombs that are over 3,000 years old and still perfectly edible.", "Here's a fun fact: Bananas are berries, but strawberries aren't!", "Did you know that octopuses have three hearts? Two pump blood to the gills, while the third pumps it to the rest of the body."],
+        "context_set": ""
+    },
+    {
+        "tag": "favorite_color",
+        "patterns": ["What's your favorite color?", "Do you have a favorite color?", "Tell me your favorite color"],
+        "responses": ["I think all colors are amazing, but blue is pretty cool!", "As a chatbot, I don't see colors, but I hear blue is calming!", "I don't have a favorite color, but I've heard a lot of people like green!"],
+        "context_set": ""
+    },
+    {
+        "tag": "favorite_food",
+        "patterns": ["What's your favorite food?", "Do you have a favorite food?", "Tell me your favorite food"],
+        "responses": ["I love learning about all kinds of food! What's your favorite?", "I don't eat, but I hear pizza is pretty popular!", "I'm always curious about new dishes. Do you have a favorite?"],
+        "context_set": ""
+    },
+    {
+        "tag": "joke",
+        "patterns": ["Tell me a joke", "Do you know any jokes?", "Make me laugh"],
+        "responses": ["Why don't scientists trust atoms? Because they make up everything!", "Why was the math book sad? Because it had too many problems.", "I tried to catch some fog earlier, but I mist."],
+        "context_set": ""
+    },
+    {
+        "tag": "news",
+        "patterns": ["What's the latest news?", "Tell me the news", "Any updates on current events?"],
+        "responses": ["Let me check the latest news for you!", "Here's a summary of the latest news: [insert_news].", "I can find some current events for you, one moment!"],
+        "context_set": ""
+    },
+    {
+        "tag": "location",
+        "patterns": ["Where are you located?", "What's your location?", "Where do you live?"],
+        "responses": ["I live in the digital world, ready to assist you from anywhere!", "I don't have a physical location, but I'm always here to help!", "I'm just a click away, no matter where you are!"],
+        "context_set": ""
+    },
+    {
+        "tag": "favorite_movie",
+        "patterns": ["What's your favorite movie?", "Do you have a favorite movie?", "Tell me your favorite movie"],
+        "responses": ["I don't watch movies, but I've heard a lot about The Matrix!", "Movies aren't really my thing, but I hear Inception is mind-bending!", "I don't watch movies, but I'm always up for hearing about your favorites!"],
+        "context_set": ""
+    },
+    {
+        "tag": "favorite_music",
+        "patterns": ["What's your favorite music?", "Do you have a favorite music genre?", "Tell me your favorite music"],
+        "responses": ["Music is amazing! I don't have a favorite, but I love learning about new songs!", "I don't listen to music, but I hear jazz is very relaxing.", "Tell me about your favorite music! I'm always curious to learn."],
+        "context_set": ""
+    },
+    {
+        "tag": "sports",
+        "patterns": ["Do you like sports?", "What's your favorite sport?", "Tell me about your favorite sport"],
+        "responses": ["I don't play sports, but I love learning about them!", "Soccer seems to be a favorite around the world!", "I'm not into sports, but I hear basketball is very popular!"],
+        "context_set": ""
+    },
+    {
+        "tag": "quote",
+        "patterns": ["Give me a quote", "Do you know any good quotes?", "Tell me an inspirational quote"],
+        "responses": ["Here's an inspirational quote: 'The only way to do great work is to love what you do.' - Steve Jobs", "How about this quote: 'The best time to plant a tree was 20 years ago. The second best time is now.' - Chinese Proverb", "Here's a motivational quote: 'You miss 100% of the shots you don't take.' - Wayne Gretzky"],
+        "context_set": ""
+    },
+    {
+        "tag": "advice",
+        "patterns": ["Give me some advice", "Do you have any advice?", "Tell me something wise"],
+        "responses": ["Here's some advice: Always be yourself, unless you can be a unicorn, then always be a unicorn!", "Remember to take time for yourself and do what makes you happy.", "If you're feeling overwhelmed, take a deep breath and break tasks into smaller steps."],
+        "context_set": ""
+    },
+    {
+        "tag": "history",
+        "patterns": ["Tell me about history", "Give me a historical fact", "What's a historical event?"],
+        "responses": ["Did you know that the Great Wall of China is over 13,000 miles long?", "In 1969, humans landed on the moon for the first time.", "The ancient city of Rome was founded in 753 BC."],
+        "context_set": ""
+    },
+    {
+        "tag": "fun_fact",
+        "patterns": ["Tell me a fun fact", "Do you know any fun facts?", "Give me an interesting fact"],
+        "responses": ["Did you know that honey never spoils? Archaeologists have found pots of honey in ancient Egyptian tombs that are over 3,000 years old and still perfectly edible.", "Here's a fun fact: Bananas are berries, but strawberries aren't!", "Did you know that octopuses have three hearts? Two pump blood to the gills, while the third pumps it to the rest of the body."],
+        "context_set": ""
+    },
+    {
+        "tag": "movies",
+        "patterns": ["Tell me about movies", "What movies do you recommend?", "Any good movie suggestions?"],
+        "responses": ["I recommend watching The Shawshank Redemption if you haven't already. It's a classic!", "How about trying some science fiction with Interstellar? It's an incredible journey.", "If you're into comedies, The Grand Budapest Hotel is a fun choice."],
+        "context_set": ""
+    },
+    {
+        "tag": "music",
+        "patterns": ["Tell me about music", "What music should I listen to?", "Any music recommendations?"],
+        "responses": ["If you're into relaxing music, try listening to some classical pieces by Beethoven.", "For something upbeat, you might enjoy some pop hits by Dua Lipa.", "If you like something unique, check out the soothing sounds of lo-fi hip hop."],
+        "context_set": ""
+    },
+    {
+        "tag": "books",
+        "patterns": ["Tell me about books", "What books do you recommend?", "Any good book suggestions?"],
+        "responses": ["I suggest reading To Kill a Mockingbird by Harper Lee; it's a profound classic.", "If you enjoy fantasy, Harry Potter and the Sorcerer's Stone is a great pick.", "For a thought-provoking read, try Sapiens: A Brief History of Humankind by Yuval Noah Harari."],
+        "context_set": ""
+    },
+    {
+        "tag": "technology",
+        "patterns": ["Tell me about technology", "What's new in tech?", "Any tech news?"],
+        "responses": ["Technology is always advancing! For the latest news, check out tech blogs like TechCrunch.", "Did you know that AI is being used to develop smarter healthcare solutions?", "The latest in tech is the rise of quantum computing, which could revolutionize data processing."],
+        "context_set": ""
+    },
+    {
+        "tag": "travel",
+        "patterns": ["Tell me about travel", "What are some travel tips?", "Any travel recommendations?"],
+        "responses": ["Traveling can be amazing! Consider visiting Kyoto for its beautiful temples and gardens.", "For travel tips, always pack light and be sure to have a local map or GPS.", "If you enjoy adventure, try exploring the natural beauty of New Zealand."],
+        "context_set": ""
+    },
+    {
+        "tag": "food",
+        "patterns": ["Tell me about food", "What food should I try?", "Any food recommendations?"],
+        "responses": ["If you're into international cuisine, try sushi or ramen from Japan.", "For something comforting, you can't go wrong with classic Italian pasta.", "How about trying some spicy Indian curry for a flavorful experience?"],
+        "context_set": ""
+    },
+    {
+        "tag": "health",
+        "patterns": ["Tell me about health", "What are some health tips?", "Any advice for staying healthy?"],
+        "responses": ["A balanced diet and regular exercise are key to staying healthy.", "Remember to stay hydrated by drinking plenty of water throughout the day.", "Mental health is important too—make sure to take breaks and relax when needed."],
+        "context_set": ""
+    },
+    {
+        "tag": "fitness",
+        "patterns": ["Tell me about fitness", "What are some fitness tips?", "Any advice for getting fit?"],
+        "responses": ["Consistency is key in fitness—try to work out regularly, even if it's just a short session.", "Incorporate both cardio and strength training into your routine for best results.", "Don't forget to stretch before and after workouts to prevent injury."],
+        "context_set": ""
+    },
+    {
+        "tag": "education",
+        "patterns": ["Tell me about education", "What are some learning resources?", "Any tips for studying?"],
+        "responses": ["Online platforms like Khan Academy and Coursera offer excellent courses on a variety of subjects.", "For studying, try the Pomodoro Technique study for 25 minutes, then take a 5-minute break.", "Reading books and articles can also supplement your learning."],
+        "context_set": ""
+    },
+    {
+        "tag": "finance",
+        "patterns": ["Tell me about finance", "What are some finance tips?", "Any advice for managing money?"],
+        "responses": ["Creating a budget and sticking to it is a great way to manage your finances.", "Consider setting aside an emergency fund for unexpected expenses.", "Investing in stocks or bonds can be a way to grow your wealth over time."],
+        "context_set": ""
+    },
+    {
+        "tag": "relationship",
+        "patterns": ["Tell me about relationships", "Any advice for relationships?", "What makes a good relationship?"],
+        "responses": ["Communication is key in any relationship—be open and honest with each other.", "Showing appreciation and spending quality time together strengthens relationships.", "Respect and understanding are fundamental to a healthy relationship."],
+        "context_set": ""
+    },
+    {
+        "tag": "personal_development",
+        "patterns": ["Tell me about personal development", "Any tips for self-improvement?", "What are some personal growth strategies?"],
+        "responses": ["Set specific, measurable goals for your personal growth and track your progress.", "Reading self-help books and seeking mentorship can provide valuable insights.", "Regularly reflect on your achievements and areas for improvement."],
+        "context_set": ""
+    },
+    {
+        "tag": "entertainment",
+        "patterns": ["Tell me about entertainment", "What are some fun activities?", "Any entertainment recommendations?"],
+        "responses": ["Consider watching a new TV series or playing a fun video game for entertainment.", "Exploring local events or visiting a museum can be a great way to spend your time.", "Listening to music or attending a concert can also be enjoyable activities."],
+        "context_set": ""
+    },
+    {
+        "tag": "events",
+        "patterns": ["Tell me about events", "What's happening locally?", "Any upcoming events?"],
+        "responses": ["You might find local events on community boards or social media platforms.", "Check out event listing websites for updates on concerts, festivals, and other happenings.", "Local newspapers often have sections dedicated to upcoming events."],
+        "context_set": ""
+    },
+    {
+        "tag": "adventure",
+        "patterns": ["Tell me about adventure", "What are some adventure activities?", "Any adventure recommendations?"],
+        "responses": ["Consider activities like hiking, rock climbing, or kayaking for an adventurous experience.", "Traveling to new and exciting places can also be a great way to seek adventure.", "Exploring nature trails or going on a road trip could be thrilling adventures."],
+        "context_set": ""
+    },
+    {
+        "tag": "shopping",
+        "patterns": ["Tell me about shopping", "What are some shopping tips?", "Any advice for shopping?"],
+        "responses": ["Make a list before you go shopping to avoid impulse buys and stay on budget.", "Consider comparing prices online before making a purchase to find the best deals.", "Look for sales and discounts to save money on your shopping trips."],
+        "context_set": ""
+    },
+
+    {
+        "tag": "travel",
+        "patterns": ["Tell me about travel", "What are some travel tips?", "Any travel recommendations?"],
+        "responses": ["Traveling can be amazing! Consider visiting Kyoto for its beautiful temples and gardens.", "For travel tips, always pack light and be sure to have a local map or GPS.", "If you enjoy adventure, try exploring the natural beauty of New Zealand."],
+        "context_set": ""
+    },
+    {
+        "tag": "language",
+        "patterns": ["Tell me about languages", "What languages do you know?", "Any language learning tips?"],
+        "responses": ["I can help with information about various languages. What are you interested in learning?", "To learn a new language, practice regularly and try to immerse yourself in the language as much as possible.", "Apps like Duolingo and Babbel can be great for learning new languages."],
+        "context_set": ""
+    },
+    {
+        "tag": "pets",
+        "patterns": ["Tell me about pets", "What are some popular pets?", "Any advice for pet care?"],
+        "responses": ["Common pets include dogs, cats, and fish. Each has its own unique care needs.", "For pet care, make sure to provide regular veterinary check-ups and a balanced diet.", "Training and socializing pets can help them be well-adjusted and happy."],
+        "context_set": ""
+    },
+    {
+        "tag": "cooking",
+        "patterns": ["Tell me about cooking", "What are some cooking tips?", "Any recipe recommendations?"],
+        "responses": ["Cooking can be fun and rewarding! Try experimenting with new recipes and ingredients.", "To improve your cooking, practice mise en place—prepping all your ingredients before you start cooking.", "How about trying a new recipe like homemade pizza or a flavorful curry?"],
+        "context_set": ""
+    },
+    {
+        "tag": "science",
+        "patterns": ["Tell me about science", "What's new in science?", "Any interesting science facts?"],
+        "responses": ["Science is always evolving! Recent advancements include developments in CRISPR technology.", "Here's an interesting fact: The human brain contains around 86 billion neurons.", "Space exploration is a major focus in science, with missions to Mars and beyond."],
+        "context_set": ""
+    },
+    {
+        "tag": "art",
+        "patterns": ["Tell me about art", "What are some famous artworks?", "Any art recommendations?"],
+        "responses": ["Famous artworks include the Mona Lisa by Leonardo da Vinci and Starry Night by Vincent van Gogh.", "Art museums often showcase incredible pieces from various artists and eras.", "Consider exploring modern art and visiting galleries to see contemporary works."],
+        "context_set": ""
+    },
+    {
+        "tag": "books",
+        "patterns": ["Tell me about books", "What books do you recommend?", "Any good book suggestions?"],
+        "responses": ["I suggest reading To Kill a Mockingbird by Harper Lee; it's a profound classic.", "If you enjoy fantasy, Harry Potter and the Sorcerer's Stone is a great pick.", "For a thought-provoking read, try Sapiens: A Brief History of Humankind by Yuval Noah Harari."],
+        "context_set": ""
+    },
+    {
+        "tag": "finance",
+        "patterns": ["Tell me about finance", "What are some finance tips?", "Any advice for managing money?"],
+        "responses": ["Creating a budget and sticking to it is a great way to manage your finances.", "Consider setting aside an emergency fund for unexpected expenses.", "Investing in stocks or bonds can be a way to grow your wealth over time."],
+        "context_set": ""
+    },
+    {
+        "tag": "sports",
+        "patterns": ["Tell me about sports", "What are some popular sports?", "Any sports recommendations?"],
+        "responses": ["Popular sports include soccer, basketball, and tennis.", "If you enjoy playing sports, consider joining a local league or team.", "Watching sports events like the World Cup or the Olympics can be exciting."],
+        "context_set": ""
+    },
+    {
+        "tag": "health",
+        "patterns": ["Tell me about health", "What are some health tips?", "Any advice for staying healthy?"],
+        "responses": ["A balanced diet and regular exercise are key to staying healthy.", "Remember to stay hydrated by drinking plenty of water throughout the day.", "Mental health is important too—make sure to take breaks and relax when needed."],
+        "context_set": ""
+    },
+    {
+        "tag": "fitness",
+        "patterns": ["Tell me about fitness", "What are some fitness tips?", "Any advice for getting fit?"],
+        "responses": ["Consistency is key in fitness—try to work out regularly, even if it's just a short session.", "Incorporate both cardio and strength training into your routine for best results.", "Don't forget to stretch before and after workouts to prevent injury."],
+        "context_set": ""
+    },
+    {
+        "tag": "education",
+        "patterns": ["Tell me about education", "What are some learning resources?", "Any tips for studying?"],
+        "responses": ["Online platforms like Khan Academy and Coursera offer excellent courses on a variety of subjects.", "For studying, try the Pomodoro Technique—study for 25 minutes, then take a 5-minute break.", "Reading books and articles can also supplement your learning."],
+        "context_set": ""
+    },
+    {
+        "tag": "personal_development",
+        "patterns": ["Tell me about personal development", "Any tips for self-improvement?", "What are some personal growth strategies?"],
+        "responses": ["Set specific, measurable goals for your personal growth and track your progress.", "Reading self-help books and seeking mentorship can provide valuable insights.", "Regularly reflect on your achievements and areas for improvement."],
+        "context_set": ""
+    },
+    {
+        "tag": "relationship",
+        "patterns": ["Tell me about relationships", "Any advice for relationships?", "What makes a good relationship?"],
+        "responses": ["Communication is key in any relationship—be open and honest with each other.", "Showing appreciation and spending quality time together strengthens relationships.", "Respect and understanding are fundamental to a healthy relationship."],
+        "context_set": ""
+    },
+    {
+        "tag": "entertainment",
+        "patterns": ["Tell me about entertainment", "What are some fun activities?", "Any entertainment recommendations?"],
+        "responses": ["Consider watching a new TV series or playing a fun video game for entertainment.", "Exploring local events or visiting a museum can be a great way to spend your time.", "Listening to music or attending a concert can also be enjoyable activities."],
+        "context_set": ""
+    },
+    {
+        "tag": "events",
+        "patterns": ["Tell me about events", "What's happening locally?", "Any upcoming events?"],
+        "responses": ["You might find local events on community boards or social media platforms.", "Check out event listing websites for updates on concerts, festivals, and other happenings.", "Local newspapers often have sections dedicated to upcoming events."],
+        "context_set": ""
+    },
+    {
+        "tag": "adventure",
+        "patterns": ["Tell me about adventure", "What are some adventure activities?", "Any adventure recommendations?"],
+        "responses": ["Consider activities like hiking, rock climbing, or kayaking for an adventurous experience.", "Traveling to new and exciting places can also be a great way to seek adventure.", "Exploring nature trails or going on a road trip could be thrilling adventures."],
+        "context_set": ""
+    },
+    {
+        "tag": "shopping",
+        "patterns": ["Tell me about shopping", "What are some shopping tips?", "Any advice for shopping?"],
+        "responses": ["Make a list before you go shopping to avoid impulse buys and stay on budget.", "Consider comparing prices online before making a purchase to find the best deals.", "Look for sales and discounts to save money on your shopping trips."],
+        "context_set": ""
+    },
+    {
+        "tag": "language",
+        "patterns": ["Tell me about languages", "What languages do you know?", "Any language learning tips?"],
+        "responses": ["I can help with information about various languages. What are you interested in learning?", "To learn a new language, practice regularly and try to immerse yourself in the language as much as possible.", "Apps like Duolingo and Babbel can be great for learning new languages."],
+        "context_set": ""
+    },
+    {
+        "tag": "pets",
+        "patterns": ["Tell me about pets", "What are some popular pets?", "Any advice for pet care?"],
+        "responses": ["Common pets include dogs, cats, and fish. Each has its own unique care needs.", "For pet care, make sure to provide regular veterinary check-ups and a balanced diet.", "Training and socializing pets can help them be well-adjusted and happy."],
+        "context_set": ""
+    },
+    {
+        "tag": "cooking",
+        "patterns": ["Tell me about cooking", "What are some cooking tips?", "Any recipe recommendations?"],
+        "responses": ["Cooking can be fun and rewarding! Try experimenting with new recipes and ingredients.", "To improve your cooking, practice mise en place—prepping all your ingredients before you start cooking.", "How about trying a new recipe like homemade pizza or a flavorful curry?"],
+        "context_set": ""
+    },
+    {
+        "tag": "science",
+        "patterns": ["Tell me about science", "What's new in science?", "Any interesting science facts?"],
+        "responses": ["Science is always evolving! Recent advancements include developments in CRISPR technology.", "Here's an interesting fact: The human brain contains around 86 billion neurons.", "Space exploration is a major focus in science, with missions to Mars and beyond."],
+        "context_set": ""
+    },
+    {
+        "tag": "art",
+        "patterns": ["Tell me about art", "What are some famous artworks?", "Any art recommendations?"],
+        "responses": ["Famous artworks include the Mona Lisa by Leonardo da Vinci and Starry Night by Vincent van Gogh.", "Art museums often showcase incredible pieces from various artists and eras.", "Consider exploring modern art and visiting galleries to see contemporary works."],
+        "context_set": ""
+    },
+    {
+        "tag": "culture",
+        "patterns": ["Tell me about culture", "What are some cultural facts?", "Any interesting cultural insights?"],
+        "responses": ["Culture is incredibly diverse. For instance, Japan celebrates Hanami, the tradition of viewing cherry blossoms.", "In Italy, food plays a central role in cultural gatherings, with meals often being long, social events.", "The Day of the Dead in Mexico is a vibrant celebration honoring deceased loved ones with altars and offerings."],
+        "context_set": ""
+    },
+    {
+        "tag": "fashion",
+        "patterns": ["Tell me about fashion", "What are some fashion trends?", "Any fashion advice?"],
+        "responses": ["Fashion trends change often, but some classic styles include the little black dress and tailored suits.", "For timeless fashion advice, invest in quality basics like well-fitting jeans and neutral sweaters.", "Don't be afraid to express your personality through your clothing choices!" ],
+        "context_set": ""
+    },
+    {
+        "tag": "gaming",
+        "patterns": ["Tell me about gaming", "What are some popular games?", "Any gaming recommendations?"],
+        "responses": ["Popular games include titles like The Legend of Zelda: Breath of the Wild and Fortnite.", "For a great story-driven experience, try The Last of Us.", "If you enjoy strategy games, Sid Meier's Civilization VI is a classic choice."],
+        "context_set": ""
+    },
+    {
+        "tag": "local_dish",
+        "patterns": ["Tell me about Nigerian food", "What are some local Nigerian dishes?", "Any recommendations for Nigerian dishes?"],
+        "responses": ["You might enjoy Jollof rice, a popular West African dish made with tomatoes, onions, and spices.", "Egusi soup, made with melon seeds and often served with fufu, is a staple in Nigerian cuisine.", "Pounded yam and egusi soup is a traditional dish loved for its rich flavors and hearty texture."],
+        "context_set": ""
+    },
+    {
+        "tag": "local_dish",
+        "patterns": ["Tell me about Nigerian desserts", "What are some popular Nigerian desserts?", "Any recommendations for Nigerian desserts?"],
+        "responses": ["Chin chin is a crunchy, sweet snack that's popular in Nigeria.", "Puff-puff is a deep-fried dough ball that's soft and sweet, often enjoyed as a dessert or snack.", "Akara, though typically a savory dish, can also be enjoyed as a sweet treat when made with sugar and spices."],
+        "context_set": ""
+    },  
+    {
+        "tag": "okay",
+        "patterns": [
+            "Okay",
+            "Alright",
+            "Got it",
+            "Understood",
+            "Sure",
+            "Fine",
+            "Sounds good",
+            "Alrighty",
+            "Okay then",
+            "Gotcha",
+            "All right",
+            "Yep",
+            "Okay, thanks",
+            "Understood, thanks",
+            "Okay, will do",
+            "Sure thing",
+            "Okay, great",
+            "Yes",
+            "That's fine",
+            "Alright, got it"
+],
+        "responses": [
+            "Great! Let me know if you need anything else.",
+            "Understood! I'm here if you have more questions.",
+            "Sounds good! Feel free to ask if you need further assistance.",
+            "Got it! Just let me know if there's anything else.",
+            "Sure thing! I'm here to help.",
+            "Fine! If you have any other questions, just ask.",
+            "Alright! I'm ready whenever you are.",
+            "Okay then! Let me know if you need anything.",
+            "Gotcha! Feel free to reach out if needed.",
+            "Alrighty! I'm here for any further help you might need.",
+            "All right! Just let me know if you need anything else.",
+            "Yep, I'm here if you need more help.",
+            "Okay, thanks! I'm here if you have more questions.",
+            "Understood, thanks! Let me know if there's anything else.",
+            "Okay, will do! Feel free to ask if you need more assistance.",
+            "Sure thing! I'm here to assist with anything you need.",
+            "Okay, great! Reach out if you have any other questions.",
+            "Yes! Let me know if there's anything else I can help with.",
+            "That's fine! Just let me know if you need more information.",
+            "Alright, got it! I'm here for any further questions."
+        ]
+    }
+    ]
+    
+} 
